@@ -102,3 +102,16 @@ padding:40px 20px;
 text-align:center;
 color:var(--muted);
 }
+.ver-projeto {
+  display: block;
+  text-align: center;
+  padding: 10px 0 14px;
+  font-weight: 600;
+  color: #9aa4b2;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.card:hover .ver-projeto {
+  color: #4fa3ff;
+}
