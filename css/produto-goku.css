@@ -60,3 +60,58 @@
     padding: 20px;
   }
 }
+.produto-imagem {
+  position: relative;
+  max-width: 420px; /* diminui a imagem */
+}
+
+.produto-imagem img {
+  width: 100%;
+  border-radius: 16px;
+  transition: opacity 0.3s ease;
+}
+
+/* BOTÕES */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  border: none;
+  font-size: 28px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background: rgba(0,255,255,0.8);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn.prev {
+  left: -22px;
+}
+
+.carousel-btn.next {
+  right: -22px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .produto-imagem {
+    max-width: 100%;
+  }
+
+  .carousel-btn.prev {
+    left: 10px;
+  }
+
+  .carousel-btn.next {
+    right: 10px;
+  }
+}
