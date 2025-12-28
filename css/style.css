@@ -34,11 +34,13 @@ align-items:center;
 text-align:center;
 gap:18px;
 }
-.hero h1{
-font-size:3.4rem;
-background:linear-gradient(90deg,var(--accent),var(--accent2));
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+.hero p {
+  color: var(--muted);
+  max-width: 760px;
+
+  margin-top: 6px;
+  margin-bottom: 22px;
+  font-size: 1.05rem;
 }
 .hero p{color:var(--muted);max-width:760px}
 .hero .actions{
