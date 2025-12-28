@@ -168,7 +168,7 @@ color:var(--muted);
 }
 
 .hero-title-img img {
-  width: 560px;        /* pode aumentar/diminuir aqui */
+  width: 500px;
   max-width: 90%;
   height: auto;
   filter: drop-shadow(0 0 70px rgba(79,163,255,0.45));
