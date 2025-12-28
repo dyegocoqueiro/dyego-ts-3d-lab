@@ -168,8 +168,8 @@ color:var(--muted);
 }
 
 .hero-title-img img {
-  width: 500px;
-  max-width: 90%;
+  width: 450px;
+  max-width: 70%;
   height: auto;
-  filter: drop-shadow(0 0 70px rgba(79,163,255,0.45));
+  filter: drop-shadow(0 0 50px rgba(79,163,255,0.45));
 }
