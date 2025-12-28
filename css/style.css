@@ -159,3 +159,15 @@ color:var(--muted);
   height: auto;
   filter: drop-shadow(0 0 18px rgba(79,163,255,0.35));
 }
+.hero-title-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.hero-title-img img {
+  width: 560px;        /* pode aumentar/diminuir aqui */
+  max-width: 90%;
+  height: auto;
+  filter: drop-shadow(0 0 24px rgba(79,163,255,0.45));
+}
