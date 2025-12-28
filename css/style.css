@@ -147,3 +147,15 @@ color:var(--muted);
     max-width: 260px;
   }
 }
+.hero-logo {
+  margin: 32px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-logo img {
+  width: 320px;
+  max-width: 80%;
+  height: auto;
+  filter: drop-shadow(0 0 18px rgba(79,163,255,0.35));
+}
