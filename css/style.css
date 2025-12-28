@@ -169,5 +169,5 @@ color:var(--muted);
   width: 560px;        /* pode aumentar/diminuir aqui */
   max-width: 90%;
   height: auto;
-  filter: drop-shadow(0 0 24px rgba(79,163,255,0.45));
+  filter: drop-shadow(0 0 50px rgba(79,163,255,0.45));
 }
