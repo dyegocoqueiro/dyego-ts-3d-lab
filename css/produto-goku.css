@@ -1,0 +1,62 @@
+/* PRODUTO GOKU - HERDA O TEMA DO SITE */
+
+.produto-banner {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 40px;
+}
+
+.produto-imagem img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-imagem img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0,255,255,0.4);
+}
+
+.produto-info {
+  max-width: 520px;
+}
+
+.produto-logo {
+  max-width: 180px;
+  margin-bottom: 20px;
+}
+
+.btn-voltar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  color: #6cf;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-whatsapp {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #00ff88, #00ccff);
+  color: #000;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px rgba(0,255,200,0.6);
+}
+
+@media (max-width: 768px) {
+  .produto-banner {
+    flex-direction: column;
+    padding: 20px;
+  }
+}
