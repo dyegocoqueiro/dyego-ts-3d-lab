@@ -156,7 +156,7 @@ color:var(--muted);
 }
 
 .hero-logo img {
-  width: 320px;
+  width: 360px;
   max-width: 80%;
   height: auto;
   filter: drop-shadow(0 0 18px rgba(79,163,255,0.35));
@@ -171,5 +171,5 @@ color:var(--muted);
   width: 560px;        /* pode aumentar/diminuir aqui */
   max-width: 90%;
   height: auto;
-  filter: drop-shadow(0 0 80px rgba(79,163,255,0.45));
+  filter: drop-shadow(0 0 70px rgba(79,163,255,0.45));
 }
