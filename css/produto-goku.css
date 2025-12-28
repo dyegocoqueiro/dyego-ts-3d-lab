@@ -1,33 +1,54 @@
-/* PRODUTO GOKU - HERDA O TEMA DO SITE */
+/* ===============================
+   PRODUTO GOKU – CSS FINAL
+   =============================== */
 
 .produto-banner {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
+  justify-content: center;
   gap: 60px;
 
   max-width: 1200px;
-  margin: 100px auto;
+  margin: 120px auto;
   padding: 40px;
+
+  box-sizing: border-box;
 }
 
+/* BLOCO DA IMAGEM */
 .produto-imagem {
-  flex: 1;
+  flex: 0 0 420px;
   max-width: 420px;
   position: relative;
 }
 
 .produto-imagem img {
   width: 100%;
-  border-radius: 16px;
+  display: block;
+  border-radius: 18px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.produto-imagem img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 0 35px rgba(0,255,255,0.35);
+}
+
+/* BLOCO DO TEXTO */
 .produto-info {
   flex: 1;
   max-width: 520px;
 }
+
+/* LOGO */
+.produto-logo {
+  max-width: 180px;
+  margin-bottom: 20px;
+}
+
+/* BOTÃO VOLTAR */
 .btn-voltar {
-  position: fixed !important;
+  position: fixed;
   top: 20px;
   left: 20px;
   z-index: 9999;
@@ -51,14 +72,17 @@
   color: #fff;
 }
 
+/* BOTÃO WHATSAPP */
 .btn-whatsapp {
   display: inline-block;
   margin-top: 30px;
   padding: 14px 28px;
+
   background: linear-gradient(135deg, #00ff88, #00ccff);
   color: #000;
   border-radius: 30px;
   font-weight: bold;
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -66,7 +90,8 @@
   transform: scale(1.1);
   box-shadow: 0 0 30px rgba(0,255,200,0.6);
 }
-/* BOTÕES */
+
+/* CARROSSEL */
 .carousel-btn {
   position: absolute;
   top: 50%;
@@ -74,13 +99,14 @@
   background: rgba(0,0,0,0.6);
   color: #fff;
   border: none;
-  font-size: 28px;
-  width: 44px;
-  height: 44px;
+  font-size: 26px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
   z-index: 10;
+
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .carousel-btn:hover {
@@ -89,39 +115,45 @@
 }
 
 .carousel-btn.prev {
-  left: -22px;
+  left: -20px;
 }
 
 .carousel-btn.next {
-  right: -22px;
+  right: -20px;
 }
 
-/* MOBILE */
+/* ===============================
+   MOBILE
+   =============================== */
 @media (max-width: 768px) {
+
   .produto-banner {
     flex-direction: column;
-    margin: 40px auto;
-    padding: 16px;
+    align-items: center;
+    gap: 30px;
+
+    margin: 80px auto;
+    padding: 20px;
   }
 
   .produto-imagem {
-    max-width: 90%;
-    margin: 0 auto 20px auto;
+    max-width: 85%;
   }
 
   .produto-imagem img {
-    border-radius: 20px;
+    border-radius: 22px;
   }
 
   .produto-info {
     max-width: 100%;
+    text-align: left;
   }
 
   .carousel-btn.prev {
-    left: 10px;
+    left: 12px;
   }
 
   .carousel-btn.next {
-    right: 10px;
+    right: 12px;
   }
 }
